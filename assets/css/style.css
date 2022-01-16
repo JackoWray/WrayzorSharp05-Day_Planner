@@ -9,14 +9,14 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border: 1px solid black;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: #06aed5;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
@@ -33,7 +33,12 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
+}
+
+.column-height {
+  height: 100%;
+  padding: 0;
 }
 
 .hour {
@@ -63,9 +68,23 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  bottom: 32px;
 }
 
-.saveBtn i:hover {
+.saveBtn img {
+  position: relative;
+  bottom: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+.saveBtn:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+/* Removed "i" element from hover pseudo-class, using img rather than italic styling therefore best to use :hover on whole button element. */

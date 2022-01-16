@@ -26,90 +26,133 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead">
-        Date & Time Placeholder, also time until next appt??
-      </p>
-      <!-- insert moment.js for current time in desired format -->
+      <p id="currentDay" class="lead"></p>
+      <!-- inserted moment.js for current time in desired format -->
     </header>
     <div class="container">
-      <div class="row">
-        <div class="col-2"><strong>9A.M.</strong></div>
-        <input class="col-9"></input>
-        <div class="col-1">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="9">
+        <label for="add-event" class="col-2 column-height">
+          <h3>9A.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2"><strong>10A.M.</strong></div>
-        <input class="col-9"></input>
-        <div class="col-1">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="10">
+        <label for="add-event" class="col-2 column-height">
+          <h3>10A.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2"><strong>11A.M.</strong></div>
-        <input class="col-9"></input>
-        <div class="col-1">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="11">
+        <label for="add-event" class="col-2 column-height">
+          <h3>11A.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2"><strong>12P.M.</strong></div>
-        <input class="col-9"></input>
-        <div class="col-1">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="12">
+        <label for="add-event" class="col-2 column-height">
+          <h3>12P.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2"><strong>1P.M.</strong></div>
-        <input class="col-9"></input>
-        <div class="col-1">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="13">
+        <label for="add-event" class="col-2 column-height">
+          <h3>1P.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2"><strong>2P.M.</strong></div>
-        <input class="col-9"></input>
-        <div class="col-1">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="14">
+        <label for="add-event" class="col-2 column-height">
+          <h3>2P.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2" style="height:100%"><strong>3P.M.</strong></div>
-        <input class="col-9" style="height:100%"></input>
-        <div class="col-1" style="height:100%">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="15">
+        <label for="add-event" class="col-2 column-height">
+          <h3>3P.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2"><strong>4P.M.</strong></div>
-        <input class="col-9"></input>
-        <div class="col-1">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="16">
+        <label for="add-event" class="col-2 column-height">
+          <h3>4P.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2"><strong>5P.M.</strong></div>
-        <input class="col-9"></input>
-        <div class="col-1">
-          <button>
-            <img src="assets/images/Actions-document-save-icon.png" alt="SAVE" width="20px" height="20px">
+      <div class="row" data-hour="17">
+        <label for="add-event" class="col-2 column-height">
+          <h3>5P.M.</h3>
+        </label>
+        <textarea id="add-event" class="col-9 column-height"></textarea>
+        <div class="col-1 column-height">
+          <button class="saveBtn" class="saveBtn">
+            <img
+              src="assets/images/Actions-document-save-icon.png"
+              alt="SAVE"
+            />
           </button>
         </div>
       </div>
