@@ -2,7 +2,7 @@ function onReady() {
   var dateAndTime = $("#currentDay");
 
   function setNow() {
-    var now = moment().subtract(7, "hours");
+    var now = moment();
     var nowFormatted = now.format("Do MMMM YYYY, h:mm:ssA");
     var nowHour = parseFloat(now.format("H"));
     var timeslotsForColour = [
@@ -88,7 +88,7 @@ function onReady() {
     "Key-8",
     "Key-9",
   ];
-
+  debugger;
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function () {
       event.preventDefault();
